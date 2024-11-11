@@ -76,23 +76,24 @@ Your journey will take you through the wildness of the American Midwest and acro
 ```
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > Your answer here
+   > the variable drovers contains the return of the function hireDrovers(cattleToDriver). If the return is not specified, it will return undefined.
+   > currently when it runs it will get undefined, because the function has no return. Once we give it a return, drovers will equal several objects within an array. > The objects contain random drovers pulled from the database array.
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > Your answer here
+   > drovers is an array of objects. drover represents each element of drovers as it iterates through the for loop. during the first loop, drover will equal drovers index 0 which is the first object within the array.
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
-   > Your public Loom URL here
+   > https://www.loom.com/share/0399ee38316040cd92ffe9cf828cbda3?sid=d23146ca-bc63-41b3-900d-15e7f49b06d7
 4. Also in the **journey** module, there is the following code:
    ```js
    for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
-      journey.push("forest")
+     journey.push("forest");
    }
    ```
    Explain this code with your best vocabulary.
-   > Your answer here
+   > Lets start where a for loop starts, in the header. We are first declaring and initializing forestNumber to equal 0. Then we create a condition that says if forestNumber is less than areas.forests then we will keep looping. areas.forest is accessing an object through its properties. areas is an object and forest is a key/name in areas object. The key forest allows us to access a value. In this case our value is the function createForests() Which is creating a random number and returning it. The condition in a for loop is a big part of what allows our for loop to start or stop if the condition is met. Lastly we have i++ which increments forest number by 1 every time we loop. What this does is update our loop so we can check our condition again and again until our loop ends.In the body we are pushing the string forest to a array called journey however many times our area.forests is (which is random).
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > Your answer here
+   > database is an array. Its an array that contains nested arrays, each nested array has a property name. within each nested array there are several objects.
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > Your answer here
+   > herdSize is a parameter which is a placeholder for a value. We are invoking the hireDrovers() function in main.js when we are printing out the team of drovers. When we invoke hireDrovers we are passing in an argument of cattleToDrive which equals 50. In the function our parameter is now going to equal 50.
 
 ## When You Are Done
 
