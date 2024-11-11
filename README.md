@@ -104,4 +104,4 @@ After you have answered all the questions above, you need to push all of your co
 3. `git commit -m "Code complete"`
 4. `git push origin main`
 
-Then go to the Learning Platform and click the **Self-assessment Complete** button.
+Then go to the Learning Platform and click the ** Self-assessment Complete** button.
